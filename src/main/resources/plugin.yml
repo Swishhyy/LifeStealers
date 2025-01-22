@@ -1,0 +1,5 @@
+name: LifeStealers
+version: '1.0-SNAPSHOT'
+main: me.swishhyy.lifeStealers.LifeStealers
+api-version: '1.21'
+load: STARTUP
