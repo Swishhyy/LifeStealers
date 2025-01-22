@@ -1,0 +1,65 @@
+# Enable/Disable any plugin functionality
+GoldenHeart: true
+HeartCrafting: true
+HeartDropAsAItem: true
+HeartStealOnKill: true # Enables stealing hearts from players upon killing them
+
+# LifeSteal Configuration
+BanLength: 1d # Duration of ban when a player runs out of hearts
+MaxHearts: 20 # Maximum number of hearts a player can have
+MinHearts: 0 # Minimum number of hearts a player can have before being banned
+HeartDropChance: 100 # Chance (in %) for a heart to drop on player death
+
+# Crafting Configuration
+GoldenHeartRecipe: true # Enables custom crafting recipe for golden hearts
+HeartCraftingRecipes:
+  Heart:
+    enabled: true
+    pattern:
+      - "NNN"
+      - "NSN"
+      - "NNN"
+    ingredients:
+      N: NETHERITE_INGOT
+      S: NETHER_STAR
+    result:
+      item: HEART_ITEM
+      amount: 1
+  GoldenHeart:
+    enabled: true
+    pattern:
+      - "HHH"
+      - "HHH"
+      - "HHH"
+    ingredients:
+      H: HEART_ITEM
+    result:
+      item: GOLDEN_HEART
+      amount: 1
+
+# PVP Options
+AllowHeartStealInPVE: false # Allows stealing hearts from mobs in PVE
+TeamKillHeartSteal: false # Enables stealing hearts from teammates
+
+# Heart Recovery Options
+HeartRecoveryCooldown: 1h # Cooldown before a player can recover a lost heart
+HeartRecoveryCommandEnabled: true # Enables a command to recover hearts
+HeartRecoveryCost: 5 # Cost in diamonds or custom items to recover one heart
+
+# Logging & Messages
+EnableLogging: true # Logs events like kills and heart transfers to the console
+KillMessage: "{killer} stole a heart from {victim}!" # Customizable kill message
+BanMessage: "You are banned for running out of hearts. See you in {time}!" # Customizable ban message
+
+# Admin Commands
+AdminBypass: false # Allows admins to bypass heart-related restrictions
+AdminNotification: true # Notifies admins when a player runs out of hearts
+
+# Other Configurations
+HeartTradeEnabled: true # Allows players to trade hearts with others
+HeartTradeCooldown: 10m # Cooldown for heart trading
+HeartStealLimitPerDay: 5 # Maximum number of hearts a player can steal in one day
+CustomHeartItemName: "&cStolen Heart" # Custom display name for heart items
+CustomHeartItemLore:
+  - "&7This heart was stolen in combat."
+  - "&6Use it wisely."
