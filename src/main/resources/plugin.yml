@@ -3,12 +3,3 @@ version: '1.0-SNAPSHOT'
 main: me.swishhyy.lifeStealers.Lifestealers
 api-version: '1.21'
 load: STARTUP
-commands:
-  team:
-    description: Manage teams.
-    usage: /team <create|join> <name>
-    aliases: [teams]
-  lifestealadmin:
-    description: Admin commands for LifeStealers plugin.
-    usage: /lifestealadmin <reset|grantheart> <player>
-    aliases: [lsadmin]
