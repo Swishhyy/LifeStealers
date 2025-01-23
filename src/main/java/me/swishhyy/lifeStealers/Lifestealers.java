@@ -1,7 +1,5 @@
 package me.swishhyy.lifeStealers;
 
-import me.swishhyy.lifeStealers.commands.PlayerCommands;
-import me.swishhyy.lifeStealers.teams.TeamManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Lifestealers extends JavaPlugin {

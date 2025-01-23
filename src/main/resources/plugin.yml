@@ -3,3 +3,22 @@ version: '1.0-SNAPSHOT'
 main: me.swishhyy.lifeStealers.Lifestealers
 api-version: '1.21'
 load: STARTUP
+commands:
+  lifestealers:
+    description: Admin command for LifeStealers plugin.
+    usage: /lifestealers <subcommand>
+    aliases: [ls]
+    permission: lifestealers.admin
+    permission-message: You do not have permission to use this command.
+  team:
+    description: Player command for managing teams in LifeStealers plugin.
+    usage: /team <subcommand>
+    aliases: [teams]
+    permission: lifestealers.player
+    permission-message: You do not have permission to use this command.
+  stats:
+    description: Command to show stats for a player.
+    usage: /stats [player]
+    aliases: []
+    permission: lifestealers.player
+    permission-message: You do not have permission to use this command.
